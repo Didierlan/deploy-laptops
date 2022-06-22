@@ -22,6 +22,13 @@ public class LaptopController {
         this.laptopRepository = laptopRepository;
     }
 
+    @GetMapping("/")
+    public String inicio(){
+        return "Hola estas en la app de Laptops por dsna";
+
+
+    }
+
 
     //muestra todas las laptops de la database
     @GetMapping("/api/laptos")
